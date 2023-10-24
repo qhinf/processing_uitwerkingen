@@ -26,3 +26,5 @@ Geen uitwerkingen.
 Geen uitwerkingen.
 
 ## Eindopdracht
+- Een interactieve, dynamische postkaart: `Ameland`
+- Een interactieve, dynamische boekomslag: `WhisperingDoor`
