@@ -1,10 +1,21 @@
 class MijnCreatie {
   float x;
   float y;
+  boolean ogenDicht;
+  
   
   MijnCreatie(float x, float y) {
     this.x = x;
     this.y = y;
+    this.ogenDicht = false;
+  }
+  
+  void ogenOpen() {
+    this.ogenDicht = false;
+  }
+  
+  void openDicht() {
+    this.ogenDicht = true;
   }
   
   void display() {
@@ -17,7 +28,7 @@ class MijnCreatie {
     noFill();
     arc(this.x, this.y, 120, 120, 0.2 * PI, 0.8 * PI);
     
-    if (mousePressed) {
+    if (ogenDicht) {
       line(this.x - 50, this.y - 20, this.x - 20, this.y - 20);
       line(this.x + 20, this.y - 20, this.x + 50, this.y - 20);
     } else {
