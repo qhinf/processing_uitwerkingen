@@ -1,4 +1,4 @@
-class Huis {
+class Huis { //<>// //<>//
   static final int aantalStijlen = 3;
 
   float x;
@@ -77,11 +77,15 @@ class Huis {
   }
 
   void mouseClicked(float muisX, float muisY) {
-    for (int i = 0; i < this.aantalRamen; i++) { //<>// //<>//
-      if (this.ramen[i].muisIsOver(muisX, muisY)) { //<>// //<>//
+    for (int i = 0; i < this.aantalRamen; i++) { //<>//
+      if (this.ramen[i].muisIsOver(muisX, muisY)) { //<>//
         this.ramen[i].mouseClicked();
       }
     }
+  }
+  
+  void valVerder(float diepte) {
+    this.doelY = this.doelY + diepte;
   }
 
   void update() {
@@ -94,6 +98,8 @@ class Huis {
       for (int i = 0; i < this.aantalRamen; i++) {
         this.ramen[i].update(this.x, this.y);
       }
+    } else {
+      this.snelheid = 0;
     }
   }
 
@@ -164,7 +170,7 @@ class Huis {
         0.2 * this.breedte, 0.5 * this.hoogte);
       break;
     }
-    
+
     for (int i = 0; i < this.aantalRamen; i++) {
       this.ramen[i].display();
     }

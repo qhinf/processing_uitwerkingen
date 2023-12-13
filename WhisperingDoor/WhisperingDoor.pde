@@ -1,4 +1,4 @@
-float valVersnelling = 3;
+float valVersnelling = 2;
 
 Achtergrond achtergrond;
 HuizenStapel huizen;

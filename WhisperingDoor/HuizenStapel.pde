@@ -45,7 +45,7 @@ class HuizenStapel {
         this.stapelHoogte -= verwijderdHuis.hoogte;
         for (int j = i; j < this.huizen.size(); j++) {
           Huis h = this.huizen.get(j);
-          h.doelY = h.doelY + verwijderdHuis.hoogte; 
+          h.valVerder(verwijderdHuis.hoogte); 
         }
         break;
       }
