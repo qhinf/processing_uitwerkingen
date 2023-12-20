@@ -1,4 +1,4 @@
-// Oefening 4.6 t/m stap 3
+// Oefening 4.6 t/m stap 2
 
 // Sketch met een box die je met de muis over het scherm kan slepen
 // Gebaseerd op https://processing.org/examples/mousefunctions.html
@@ -28,8 +28,6 @@ void setup() {
   mouseLockedOnBox = false;
   lockedOffsetX = 0.0;
   lockedOffsetY = 0.0;
-  
-  rectMode(RADIUS);
 }
 
 // De draw is heel simpel: we hoeven alleen de box te tekenen

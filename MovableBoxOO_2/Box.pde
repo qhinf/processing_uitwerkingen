@@ -12,6 +12,8 @@ class Box {
   }
 
   void display() {
+    rectMode(RADIUS);
+    
     // Als de muis de box vasthoudt, maken we de box wit
     if (mouseLockedOnBox) {
       fill(#ffffff);
